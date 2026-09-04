@@ -20,7 +20,7 @@ export type AppUser = {
 export const DEV_USER: AppUser = {
   id: "dev-user",
   displayName: "Dev User",
-  primaryEmail: "dev@example.com",
+  primaryEmail: "sureshkumarmr2004@gmail.com",
   profileImageUrl: null,
   isDevFallback: true,
 };
@@ -62,12 +62,12 @@ export function useCurrentUserState(): CurrentUserState {
   return {
     user: user
       ? {
-          id: user.id,
-          displayName: user.name ?? null,
-          primaryEmail: user.email ?? null,
-          profileImageUrl: user.image ?? null,
-          isDevFallback: false,
-        }
+        id: user.id,
+        displayName: user.name ?? null,
+        primaryEmail: user.email ?? null,
+        profileImageUrl: user.image ?? null,
+        isDevFallback: false,
+      }
       : null,
     isPending,
   };
