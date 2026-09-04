@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/projects/garage-management",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Sureshkumar — Web Solutions Engineer",
+      "hasCanvas": false,
+      "bodyTextLen": 1686,
+      "bodyTextHash": "2129f8f3dce9766e5eb82f0ee5eee7deee008c608fb8b063bc428fbd2f940c38",
+      "bodyTextPrefix": "Sureshkumar Work Process About Contact Resume /projects/garage-m",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/case-study.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Sureshkumar — Web Solutions Engineer",
+      "hasCanvas": false,
+      "bodyTextLen": 1657,
+      "bodyTextHash": "a86fe567f3a2f4bc371be4684d1b823cdd26b696b68306324889afae58920d1d",
+      "bodyTextPrefix": "Sureshkumar Menu /projects/garage-management All work ENTERPRISE",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/case-study-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/case-study.json"
+}

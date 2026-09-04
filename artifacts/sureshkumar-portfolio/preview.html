@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sureshkumar | Web Solutions Engineer</title>
+  <meta name="description" content="Sureshkumar — Web Solutions Engineer. Building strategic digital experiences through thoughtful design, scalable web development, and business-focused problem-solving." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
+    @media (min-width: 768px) { .section-padding { padding-top: 7rem; padding-bottom: 7rem; } }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="#" class="text-lg font-semibold tracking-tight text-slate-900 dark:text-white">Sureshkumar</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">About</a>
+          <a href="#skills" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Skills</a>
+          <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Projects</a>
+          <a href="#process" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Process</a>
+          <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
+          <button id="theme-toggle" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition-colors" aria-label="Toggle dark mode">
+            <svg id="moon-icon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            <svg id="sun-icon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </button>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-slate-200">
+        <div class="flex flex-col gap-1 pt-3">
+          <a href="#about" class="px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-lg">About</a>
+          <a href="#skills" class="px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-lg">Skills</a>
+          <a href="#projects" class="px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-lg">Projects</a>
+          <a href="#process" class="px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-lg">Process</a>
+          <a href="#contact" class="px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 rounded-lg">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center pt-20 pb-16 overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="max-w-3xl">
+        <p class="text-sm font-medium text-blue-600 mb-4 tracking-wide uppercase">Web Solutions Engineer</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">Sureshkumar</h1>
+        <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
+          Building strategic digital experiences through thoughtful design, scalable web development, and business-focused problem-solving.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-sm">
+            View Projects
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 bg-white border border-slate-200 text-slate-700 font-medium rounded-lg hover:bg-slate-50 transition-colors">
+            Get in Touch
+          </a>
+        </div>
+        <div class="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-500">
+          <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>5+ Major Projects</span>
+          <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>ERP System Planning</span>
+          <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>React + WordPress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section-padding bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div>
+          <h2 class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">About</h2>
+          <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Solution-oriented web professional</h3>
+          <p class="mt-6 text-slate-600 leading-relaxed">
+            A solution-oriented web professional with experience transforming business requirements into scalable digital products. Strong background in creating landing pages, administrative dashboards, booking systems, lead management workflows, and enterprise website maintenance. Currently expanding expertise in React, Next.js, Node.js, and modern product development.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+            <h4 class="font-semibold text-slate-900">Conversion-Focused Sites</h4>
+            <p class="mt-1.5 text-sm text-slate-600">Landing pages, lead systems, and booking flows built for business results.</p>
+          </div>
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+            <h4 class="font-semibold text-slate-900">Dashboard & ERP Planning</h4>
+            <p class="mt-1.5 text-sm text-slate-600">End-to-end product design for complex operational systems.</p>
+          </div>
+          <div class="p-5 rounded-xl border border-slate-200 bg-slate-50">
+            <h4 class="font-semibold text-slate-900">Full Delivery Cycle</h4>
+            <p class="mt-1.5 text-sm text-slate-600">From research and wireframes through development, testing, and documentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">Technical Skills</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Tools & technologies I work with</h3>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h4 class="font-semibold text-slate-900 mb-4">Frontend Development</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">React.js</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">JavaScript</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Vite</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">HTML5</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">CSS3</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h4 class="font-semibold text-slate-900 mb-4">CMS & Website Engineering</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">WordPress</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Elementor</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">WPBakery</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">WooCommerce</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">SEO Optimization</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Website Performance</span>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h4 class="font-semibold text-slate-900 mb-4">Design & Product</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Figma</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">UI Design</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">UX Strategy</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Wireframing</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Design Systems</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Dashboard Design</span>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h4 class="font-semibold text-slate-900 mb-4">Development Tools</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Git</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">GitHub</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">VS Code</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Cursor AI</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Claude</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Canva</span>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200 bg-white">
+          <h4 class="font-semibold text-slate-900 mb-4">Currently Learning</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Next.js</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">Node.js</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">REST APIs</span>
+            <span class="px-3 py-1.5 text-sm rounded-lg bg-slate-100 text-slate-700">AI Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section-padding bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">Featured Projects</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Selected work across industries</h3>
+        <p class="mt-4 text-slate-600">From ERP system planning to conversion-focused landing pages — a selection of complete projects.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Project 1 -->
+        <article class="group p-6 sm:p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:border-blue-300 transition-all">
+          <span class="inline-block px-2.5 py-1 text-xs font-medium rounded-md bg-blue-50 text-blue-700 mb-3">Personal Brand + Web Application</span>
+          <h4 class="text-xl font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">Executive Consulting Platform</h4>
+          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Designed a premium digital platform for an executive consulting business focused on lead generation and appointment conversion.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Premium landing page architecture</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Appointment booking flow</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Lead management dashboard</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Conversion optimization strategy</li>
+          </ul>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Figma</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">React Planning</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">UX Strategy</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Wireframing</span>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="group p-6 sm:p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:border-blue-300 transition-all">
+          <span class="inline-block px-2.5 py-1 text-xs font-medium rounded-md bg-blue-50 text-blue-700 mb-3">Enterprise Web Application</span>
+          <h4 class="text-xl font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">Garage Management System</h4>
+          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Planned and designed a complete Garage ERP solution for automotive service centers.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Customer Management & Vehicle Database</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Job Card System & Service History</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Technician Dashboard & Scheduling</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Billing, Inventory & Role-Based Auth</li>
+          </ul>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Product Design</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Dashboard</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">ERP Planning</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">UI/UX</span>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="group p-6 sm:p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:border-blue-300 transition-all">
+          <span class="inline-block px-2.5 py-1 text-xs font-medium rounded-md bg-blue-50 text-blue-700 mb-3">Corporate Website</span>
+          <h4 class="text-xl font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">Corporate Technology Website</h4>
+          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Developed and maintained an enterprise technology website with performance-focused improvements.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Landing page redesign</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Typography & color system</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Responsive & image optimization</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Performance improvements</li>
+          </ul>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">WordPress</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Performance</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Responsive Design</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">SEO</span>
+          </div>
+        </article>
+        <!-- Project 4 -->
+        <article class="group p-6 sm:p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:border-blue-300 transition-all">
+          <span class="inline-block px-2.5 py-1 text-xs font-medium rounded-md bg-blue-50 text-blue-700 mb-3">Operations Dashboard</span>
+          <h4 class="text-xl font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">Travel Operations Dashboard</h4>
+          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Planned an internal dashboard for travel operations and itinerary management.</p>
+          <ul class="mt-4 space-y-1.5">
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Tour listings & itinerary management</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Travel package organization</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Legal document workflow</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Administrative dashboard</li>
+          </ul>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Dashboard Design</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">UX Planning</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Data Structure</span>
+          </div>
+        </article>
+        <!-- Project 5 -->
+        <article class="group p-6 sm:p-8 rounded-2xl border border-slate-200 bg-slate-50 hover:border-blue-300 transition-all md:col-span-2">
+          <span class="inline-block px-2.5 py-1 text-xs font-medium rounded-md bg-blue-50 text-blue-700 mb-3">React Landing Page</span>
+          <h4 class="text-xl font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">Fitness Brand Landing Page</h4>
+          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Built a premium fitness landing page emphasizing membership conversion.</p>
+          <ul class="mt-4 space-y-1.5 grid sm:grid-cols-2 gap-x-4">
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>React + Vite development</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Animated UI & Swiper</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>Responsive design</li>
+            <li class="text-sm text-slate-500 flex items-start gap-2"><span class="mt-1.5 w-1 h-1 rounded-full bg-slate-400 shrink-0"></span>CTA optimization & premium branding</li>
+          </ul>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">React</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Vite</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Tailwind CSS</span>
+            <span class="px-2.5 py-1 text-xs rounded-md bg-white border border-slate-200 text-slate-600">Animation</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section-padding">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">Design Process</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">How I approach every project</h3>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <span class="text-2xl font-bold text-blue-600/20">01</span>
+          <h4 class="mt-2 font-semibold text-slate-900 text-sm sm:text-base">Research & Discovery</h4>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <span class="text-2xl font-bold text-blue-600/20">02</span>
+          <h4 class="mt-2 font-semibold text-slate-900 text-sm sm:text-base">Business Requirement Analysis</h4>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <span class="text-2xl font-bold text-blue-600/20">03</span>
+          <h4 class="mt-2 font-semibold text-slate-900 text-sm sm:text-base">Wireframing & UX Planning</h4>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <span class="text-2xl font-bold text-blue-600/20">04</span>
+          <h4 class="mt-2 font-semibold text-slate-900 text-sm sm:text-base">Visual Interface Design</h4>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <span class="text-2xl font-bold text-blue-600/20">05</span>
+          <h4 class="mt-2 font-semibold text-slate-900 text-sm sm:text-base">Frontend Development</h4>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <span class="text-2xl font-bold text-blue-600/20">06</span>
+          <h4 class="mt-2 font-semibold text-slate-900 text-sm sm:text-base">Testing & Optimization</h4>
+        </div>
+        <div class="p-5 rounded-xl border border-slate-200 bg-white">
+          <span class="text-2xl font-bold text-blue-600/20">07</span>
+          <h4 class="mt-2 font-semibold text-slate-900 text-sm sm:text-base">Deployment & Documentation</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section-padding bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-bold tracking-tight">5+</div>
+          <div class="mt-1 text-sm text-slate-400">Featured Projects</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-bold tracking-tight">2</div>
+          <div class="mt-1 text-sm text-slate-400">Web Applications</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-bold tracking-tight">3+</div>
+          <div class="mt-1 text-sm text-slate-400">Business Websites</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-bold tracking-tight">3</div>
+          <div class="mt-1 text-sm text-slate-400">Dashboard Systems</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-bold tracking-tight">5+</div>
+          <div class="mt-1 text-sm text-slate-400">Landing Pages</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl sm:text-4xl font-bold tracking-tight">6</div>
+          <div class="mt-1 text-sm text-slate-400">Industries</div>
+        </div>
+      </div>
+      <div class="mt-16 pt-12 border-t border-slate-800">
+        <p class="text-center text-sm font-medium text-slate-400 uppercase tracking-wider mb-6">Industries Worked Across</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="px-4 py-2 text-sm rounded-full border border-slate-700 text-slate-300 bg-slate-800/50">Business Consulting</span>
+          <span class="px-4 py-2 text-sm rounded-full border border-slate-700 text-slate-300 bg-slate-800/50">Technology</span>
+          <span class="px-4 py-2 text-sm rounded-full border border-slate-700 text-slate-300 bg-slate-800/50">Automotive</span>
+          <span class="px-4 py-2 text-sm rounded-full border border-slate-700 text-slate-300 bg-slate-800/50">Travel & Tourism</span>
+          <span class="px-4 py-2 text-sm rounded-full border border-slate-700 text-slate-300 bg-slate-800/50">Fitness & Wellness</span>
+          <span class="px-4 py-2 text-sm rounded-full border border-slate-700 text-slate-300 bg-slate-800/50">Digital Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-padding bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">Contact</h2>
+        <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Let’s build something strategic</h3>
+        <p class="mt-4 text-slate-600">Open to web application projects, dashboard systems, business websites, and product design collaborations.</p>
+        <div class="mt-8">
+          <a href="mailto:hello@sureshkumar.dev" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <p>© 2026 Sureshkumar. All rights reserved.</p>
+        <p>Built with React, Vite & Tailwind CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'border-b', 'border-slate-200/50');
+        navbar.classList.remove('bg-transparent');
+      } else {
+        navbar.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'border-b', 'border-slate-200/50');
+        navbar.classList.add('bg-transparent');
+      }
+    });
+
+    // Mobile menu
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Theme toggle (basic)
+    const themeToggle = document.getElementById('theme-toggle');
+    const moonIcon = document.getElementById('moon-icon');
+    const sunIcon = document.getElementById('sun-icon');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      moonIcon.classList.toggle('hidden');
+      sunIcon.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
