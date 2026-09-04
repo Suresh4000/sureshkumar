@@ -66,14 +66,14 @@ function Hero() {
               </a>
             </div>
           </div>
-          <div className="hero-line mx-auto w-full max-w-sm lg:max-w-none">
-            <div className="overflow-hidden">
+          <div className="hero-line mx-auto w-full max-w-sm lg:max-w-none lg:flex lg:justify-center">
+            <div className="overflow-hidden rounded-full mx-auto max-w-[350px] w-full aspect-square border-4 border-bg-elevated shadow-xl">
               <img
                 src="/sureshkumar.png"
                 alt="Sureshkumar"
                 width={500}
                 height={500}
-                className="h-[350px] w-[350px] rounded-full object-cover object-[center_18%] mx-auto"
+                className="h-full w-full object-cover object-[center_18%]"
               />
             </div>
           </div>

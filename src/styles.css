@@ -5,23 +5,23 @@
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  --color-bg: #f3efe6;
-  --color-bg-elevated: #faf7f1;
-  --color-bg-subtle: #e8e2d6;
-  --color-fg: #1c1915;
-  --color-fg-muted: #6b6560;
-  --color-fg-subtle: #8a837c;
-  --color-border: #d8d0c4;
-  --color-border-strong: #c4b9a8;
-  --color-accent: #3d4f66;
-  --color-accent-fg: #faf7f1;
-  --color-inverse: #141311;
-  --color-inverse-fg: #f3efe6;
+  --color-bg: #F8FAFC;
+  --color-bg-elevated: #FFFFFF;
+  --color-bg-subtle: #DCEAFE;
+  --color-fg: #0F172A;
+  --color-fg-muted: #334155;
+  --color-fg-subtle: #64748B;
+  --color-border: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+  --color-accent: #2563EB;
+  --color-accent-fg: #FFFFFF;
+  --color-inverse: #0F172A;
+  --color-inverse-fg: #F8FAFC;
   --color-olive: #3f4a3a;
   --color-rust: #6e3b2e;
   --color-stone: #5a534a;
-  --color-success: #2f5d45;
-  --color-danger: #8b3a32;
+  --color-success: #16a34a;
+  --color-danger: #dc2626;
 
   --radius-xs: 0.25rem;
   --radius-sm: 0.5rem;
@@ -104,6 +104,7 @@
     transform: translateY(12px);
     filter: blur(4px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -119,12 +120,15 @@
 .hero-line:nth-child(1) {
   animation-delay: 40ms;
 }
+
 .hero-line:nth-child(2) {
   animation-delay: 120ms;
 }
+
 .hero-line:nth-child(3) {
   animation-delay: 200ms;
 }
+
 .hero-line:nth-child(4) {
   animation-delay: 280ms;
 }

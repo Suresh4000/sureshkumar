@@ -23,7 +23,7 @@ export const profile = {
     "Strategic digital experiences through thoughtful design, scalable web development, and business-focused problem-solving.",
   about:
     "I turn business requirements into digital products that are easy to use and ready to grow. My work covers landing pages, administrative dashboards, booking systems, lead workflows, and long-term website care. I currently deepen React, Next.js, Node.js, and AI-assisted product planning.",
-  email: "hello@sureshkumar.dev",
+  email: "sureshkumarmr2004@gmail.com",
 };
 
 export const skillGroups = [

@@ -43,11 +43,11 @@ export function SiteHeader() {
           >
             Resume
           </a>
-          <ThemeButton theme={theme} onToggle={toggle} />
+          {/* <ThemeButton theme={theme} onToggle={toggle} /> */}
         </nav>
 
         <div className="flex items-center gap-1 md:hidden">
-          <ThemeButton theme={theme} onToggle={toggle} />
+          {/* <ThemeButton theme={theme} onToggle={toggle} /> */}
           <button
             type="button"
             className="inline-flex size-11 items-center justify-center rounded-md text-fg"
